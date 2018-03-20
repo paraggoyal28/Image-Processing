@@ -30,3 +30,4 @@ while True :
 videoObject.release()
 out.release()
 cv2.destroyAllWindows()
+cv2.waitKey(1) #fix for mac
