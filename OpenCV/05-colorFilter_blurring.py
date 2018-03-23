@@ -25,6 +25,7 @@ smoothed = cv2.filter2D(final_img, -1, kernel)
 
 blur = cv2.GaussianBlur(final_img, (9,9), 0)
 
+medianBlur = cv2.medianBlur(final_img, 15)
 
 cv2.imshow('Image', img)
 cv2.imshow('mask', mask)
@@ -32,6 +33,7 @@ cv2.imshow('Image HSV', hsv)
 cv2.imshow('Final Img', final_img)
 cv2.imshow('smoothed', smoothed)
 cv2.imshow('blur', blur)
+cv2.imshow('median blur', medianBlur)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
